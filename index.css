@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Container */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/bg-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* left box */
+.fylo{
+    width: 350px;
+    height: 200px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 5px;
+    border-top-right-radius: 100px;
+    box-shadow: 0 0 50px hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.icons{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.upload-icon{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 2px hsl(229, 57%, 11%);
+}
+
+.upload-icon:hover{
+    background-color: hsla(229, 57%, 11%, 0.6);
+    cursor: pointer;
+}
+
+/* right box */
+.storage{
+    width: 600px;
+    height: 180px;
+    background-color: hsl(228, 56%, 26%);
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px hsl(229, 57%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.text{
+    color: hsl(229, 7%, 55%);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.text span{
+    color: hsl(0, 0%, 100%);
+}
+
+.storage-input{
+    width: 100%;
+    height: 20px;
+    appearance: none;
+    background: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.storage-input::-webkit-slider-runnable-track{
+    height: 18px;
+    background-color:hsl(229, 57%, 11%);
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 81% , hsl(229, 57%, 11%) 81.5%);
+    margin: 2px;
+}
+
+.storage-input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 3px solid hsl(335, 100%, 65%);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+}
+
+.range-text{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range{
+    color: white;
+    font-size: 16px;
+}
+
+.left-storage{
+    background-color:hsl(0, 0%, 100%);
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    border-radius: 5px;
+    top: -50px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-storage h1{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.left-storage h1 span{
+    font-size: 14px;
+    color:hsl(229, 7%, 55%);
+
+}
+
+@media (max-width: 700px){
+    .container{
+        background-image: url(./Images/bg-mobile.png);
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        padding: 0 8px;
+    }
+
+    .fylo, .storage{
+        width: 70%;
+    }
+
+    .fylo{
+        padding: 7.5%;
+    }
+
+    .storage{
+        align-items: center;
+    }
+
+    .text{
+        margin-bottom: 25px;
+    }
+
+    .left-storage{
+        top: 150px;
+        right: auto;
+    }
+}
+
+@media (max-width: 350px){
+    .fylo, .storage{
+        width: 95%;
+    }
+}

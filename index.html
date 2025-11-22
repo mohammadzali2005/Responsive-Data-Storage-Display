@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Data Storage </title>
+    <meta name="description" content="A simple HTML page with metadata for data storage.">
+    <link rel="stylesheet" href="./index.css">
+</head> 
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- left box -->
+        <div class="fylo">
+            <img src="./Images/logo.svg" alt="logo" class="logo">
+            <div class="icons">
+                <span class="upload-icon"><img src="./Images/icon-document.svg" alt="document icon" class="icon"></span>
+                <span class="upload-icon"><img src="./Images/icon-folder.svg" alt="folder icon" class="icon"></span>
+                <span class="upload-icon"><img src="./Images/icon-upload.svg" alt="upload icon" class="icon"></span>
+            </div>
+        </div>
+        <!-- right box -->
+        <div class="storage">
+            <p class="text"> You've used <span><strong>815GB</strong></span> of your storage </p>
+            <input type="range" class="storage-input" min="0" max="1000" value="815">
+            <div class="range-text">
+                <p class="range"> 0 GB </p>
+                <p class="range"> 1000 GB </p>
+            </div>
+            <div class="left-storage">
+                <h1> 185 <span> GB LEFT </span></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
