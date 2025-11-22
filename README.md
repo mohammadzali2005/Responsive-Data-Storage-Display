@@ -11,10 +11,10 @@ A single-page frontend project built with HTML and CSS that visually presents to
 - CSS (Flexbox, responsive styling)
 
 # 📸 Preview
-![Preview]())
+![Preview](https://github.com/mohammadzali2005/Responsive-Data-Storage-Display/blob/main/Thumbnail))
 
 # 🎯 Purpose
 This project was created to strenghten my layout design skills — focusing on spacing, alignment, and responsive structure. 
 
 # 📁 Live Demo
-👉 [Live Demo]()
+👉 [Live Demo](https://mohammadzali2005.github.io/Responsive-Data-Storage-Display/)
